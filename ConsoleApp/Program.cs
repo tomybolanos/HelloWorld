@@ -1,7 +1,6 @@
 ﻿using System;
-using System.Net.Http;
 using System.Configuration;
-using Microsoft.Extensions.DependencyInjection;
+using System.Net.Http;
 
 namespace ConsoleApp
 {
@@ -16,7 +15,7 @@ namespace ConsoleApp
                 using (HttpClient client = new HttpClient())
                 {
                     HttpResponseMessage response = await client.GetAsync(url);
-                    string  content = await response.Content.ReadAsStringAsync();
+                    string content = await response.Content.ReadAsStringAsync();
 
                     Console.WriteLine(content);
                 }

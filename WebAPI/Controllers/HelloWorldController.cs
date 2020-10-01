@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Microsoft.AspNetCore.Mvc;
+using DAL;
 using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
 
 namespace WebAPI.Controllers
 {
@@ -11,9 +8,17 @@ namespace WebAPI.Controllers
     [ApiController]
     public class HelloWorldController : ControllerBase
     {
+        private DAL.APIDbContext _context;
+
+        public  HelloWorldController(APIDbContext context)
+        {
+            _context = context;
+        }
         [HttpGet]
         public string Get()
         {
+            var l = _context.User.Select(o => o.UserName == "Hello World");
+            // do something
             return "Hello World";
         }
     }

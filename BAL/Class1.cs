@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace BAL
+﻿namespace BAL
 {
     public class Class1
     {
