@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI", "WebAPI\WebAPI.csproj", "{ABE0FE26-B1F5-4793-824D-E308BFD23F78}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAPI", "WebAPI\WebAPI.csproj", "{ABE0FE26-B1F5-4793-824D-E308BFD23F78}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BAL", "BAL\BAL.csproj", "{B0710488-B783-4292-A36B-A2DD5C60E7A6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BAL", "BAL\BAL.csproj", "{B0710488-B783-4292-A36B-A2DD5C60E7A6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{EEB79BDF-C229-4285-B463-DE0312B382ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAL", "DAL\DAL.csproj", "{EEB79BDF-C229-4285-B463-DE0312B382ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "ConsoleApp\ConsoleApp.csproj", "{4DC9C34E-ACE4-4032-85EE-7FA581EBE9AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp", "ConsoleApp\ConsoleApp.csproj", "{4DC9C34E-ACE4-4032-85EE-7FA581EBE9AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld.API.UnitTest", "HelloWorld.API.UnitTest\HelloWorld.API.UnitTest.csproj", "{074B475F-A60F-4E23-A7F5-FE23F5294182}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo.API.UnitTest", "HelloWorld.API.UnitTest\Demo.API.UnitTest.csproj", "{074B475F-A60F-4E23-A7F5-FE23F5294182}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

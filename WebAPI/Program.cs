@@ -1,12 +1,21 @@
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 
 namespace WebAPI
 {
     public class Program
     {
+        private static IConfiguration configuration;
+
         public static void Main(string[] args)
         {
+            configuration = new ConfigurationBuilder()
+                .AddEnvironmentVariables()
+                .AddCommandLine(args)
+                .AddJsonFile("appsettings.json")
+                .Build();
+
             CreateHostBuilder(args).Build().Run();
         }
 
@@ -14,7 +23,10 @@ namespace WebAPI
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    webBuilder.UseStartup<Startup>();
+
+                    webBuilder.UseStartup<Startup>()
+                        .UseConfiguration(configuration);
+
                 });
     }
 }

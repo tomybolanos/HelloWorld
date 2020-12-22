@@ -5,6 +5,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using DAL;
 using Microsoft.EntityFrameworkCore;
+using BAL.Abstract;
+using BAL;
 
 namespace WebAPI
 {
@@ -22,6 +24,7 @@ namespace WebAPI
         {
             services.AddControllers();
             services.AddDbContext<APIDbContext>();
+            services.AddScoped<IStatusService, StatusService>();
 
         }
 
@@ -43,6 +46,7 @@ namespace WebAPI
             {
                 endpoints.MapControllers();
             });
+            
         }
     }
 }
